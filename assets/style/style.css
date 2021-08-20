@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #121214 !important;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 96%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 92%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 88%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 84%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.f8 {
+  font-size: 0.5rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.color1 {
+  color: #2af491;
+}
+
+.color2 {
+  color: #121214;
+}
+
+.color3 {
+  color: rgba(59, 59, 70, 0.75);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.page_container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zindexBawl {
+  z-index: -1;
+}
+
+.header_bawl {
+  margin-top: 4rem;
+}
+
+.header_container {
+  height: 84px;
+  background: #121214;
+  border-bottom: 1px solid #2e2e2e;
+  position: fixed;
+  z-index: 999;
+}
+
+.hero_container {
+  padding-top: 158px;
+}
+
+.hero_container h1 {
+  font-size: 4rem;
+  line-height: 77px;
+}
+
+.hero_container p {
+  line-height: 24px;
+}
+
+.hero_container button:nth-child(1) {
+  background-color: #33ca80;
+  width: 168px;
+  height: 44px;
+  border-radius: 5px;
+}
+
+.hero_container .hero_bawl {
+  margin-top: -2.8rem;
+  margin-right: -5.5rem;
+}
+
+.hero_container .hero_bawl2 {
+  margin-right: -1rem;
+  margin-bottom: -1rem;
+}
+
+.partner_container {
+  margin-top: 3rem;
+}
+
+.partner_container .product_head h2 {
+  font-size: 2.25rem;
+  line-height: 44px;
+}
+
+.partner_container .product_head p {
+  line-height: 24px;
+}
+
+.partner_container .product_head .green_line {
+  height: 1px;
+  background-color: #2af491;
+  width: 100%;
+}
+
+.partner_container .partner_body h5 {
+  line-height: 24px;
+}
+
+.partner_container .partner_body p {
+  line-height: 22px;
+  max-width: 534px;
+}
+
+.partner_container .partner_bawl {
+  margin-top: -4rem;
+}
+
+.partner_container .partner_bawl2 {
+  margin-right: -1rem;
+}
+
+.partner_container .partnerbawl3 {
+  margin-top: -6rem;
+  margin-left: -3rem;
+}
+
+.footer_container {
+  background-color: #121214;
+  margin-top: 5rem;
+  padding: 4rem 0rem 0rem 0rem;
+  border-top: 1px solid #2e2e2e;
+}
+
+.footer_container h5 {
+  line-height: 22px;
+}
+
+.footer_container ul li a {
+  line-height: 19px;
+}
+
+.footer_container .copy_write {
+  border-top: 1px solid #2e2e2e;
+}
+
+.footer_container .footerbawl1 {
+  margin-top: -2rem;
+}
+
+.footer_container .footerbawl2 {
+  left: 30%;
+  margin-top: -6.4rem;
+}
+/*# sourceMappingURL=style.css.map */
