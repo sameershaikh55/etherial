@@ -26,6 +26,7 @@ body {
 html {
 	width: 100%;
 	font-size: 100%;
+	// overflow-x: hidden;
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -328,6 +329,136 @@ html {
 		.hero_img2 {
 			display: none;
 		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.hero_container {
+		.hero_img1 {
+			margin-top: 6rem;
+			display: block;
+			img {
+				width: 100%;
+			}
+		}
+
+		.hero_img2 {
+			display: none;
+		}
+	}
+	.hero_container h1 {
+		font-size: 3.5rem;
+		line-height: 65px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero_container h1 {
+		font-size: 3rem;
+		line-height: 60px;
+	}
+	.hero_container p {
+		line-height: 22px;
+	}
+	.f20 {
+		font-size: 1.1rem;
+	}
+	.hero_container {
+		padding-top: 142px;
+	}
+	.hero_container button:nth-child(1) {
+		background-color: #33ca80;
+		width: 158px;
+		height: 40px;
+		border-radius: 5px;
+	}
+	.grayBall {
+		width: 120px;
+		height: 100%;
+	}
+	.partner_body {
+		.f18 {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.hero_container h1 {
+		font-size: 2.6rem;
+		line-height: 50px;
+	}
+	.f16 {
+		font-size: 0.9rem;
+	}
+	.hero_container button:nth-child(1) {
+		background-color: #33ca80;
+		width: 145px;
+		height: 38px;
+		border-radius: 5px;
+	}
+	.mouse_img {
+		width: 15px;
+		height: auto;
+	}
+	.partner_container .product_head h2 {
+		font-size: 2.15rem;
+		line-height: 38px;
+	}
+	.partner_container .partner_body h5 {
+		line-height: 20px;
+	}
+	.grayBall {
+		width: 70px;
+		height: 100%;
+	}
+	.partner_body {
+		.f18 {
+			font-size: 0.8rem;
+		}
+	}
+	.partner_container .partner_body p {
+		line-height: 15px;
+	}
+	.partner_container .partner_body p {
+		line-height: 20px;
+	}
+	.partner_container {
+		.bawl5 {
+			margin-top: -15rem;
+
+			img {
+				width: 100px;
+				height: auto;
+			}
+		}
+	}
+	.hero_container .hero_bawl {
+		margin-top: -2.4rem;
+		margin-right: -4.6rem;
+
+		img {
+			width: 130px;
+			height: auto;
+		}
+	}
+	.partner_container .partner_bawl {
+		margin-top: -6.6rem;
+		width: 110px;
+	}
+
+	.header_container {
+		height: 75px;
+		.logo_cont {
+			img {
+				width: 35px;
+				height: auto;
+			}
+		}
+	}
+
+	.footer_container {
+		padding: 2.5rem 0rem 0rem 0rem;
 	}
 }
 // MEDIA QUERIES END
