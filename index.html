@@ -22,7 +22,7 @@
     <title>Etherial Software</title>
   </head>
 
-  <body>
+  <body id="home">
 
     <!-- HEADER BAWL START -->
     <div class="header_bawl position-absolute top-0 lef-0">
@@ -44,12 +44,12 @@
                 <div class="">
                   <ul class="list-unstyled mb-0 d-flex">
                     <li>
-                      <a class="text-decoration-none text-white" href="">
+                      <a id="homeLink" class="product_link1 text-decoration-none" href="#home">
                         Home
                       </a>
                     </li>
                     <li class="ms-5">
-                      <a class="text-decoration-none color3" href="">
+                      <a id="productLink" class="product_link text-decoration-none color3" href="#product">
                         Products
                       </a>
                     </li>
@@ -99,7 +99,10 @@
                       more</button>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 hero_img1">
+                  <img src="./assets/images/heroFull.svg" alt="">
+                </div>
+                <div class="col-6 hero_img2">
                   <img src="./assets/images/hero.svg" alt="">
                 </div>
               </div>
@@ -110,8 +113,8 @@
     </div>
     <!-- ====== HERO END ====== -->
 
-    <!-- ====== PARTNER START ====== -->
-    <div class="partner_container">
+    <!-- ====== PRODUCT START ====== -->
+    <div id="product" class="partner_container">
       <div class="page_container">
         <div class="container-fluid">
           <div class="row">
@@ -199,7 +202,7 @@
         </div>
       </div>
     </div>
-    <!-- ====== PARTNER END ====== -->
+    <!-- ====== PRODUCT END ====== -->
 
     <!-- ====== FOOTER START ====== -->
     <div class="footer_container position-relative">
@@ -229,8 +232,8 @@
                     <div class="col-3">
                       <h5 class="color1 f18">Navigation</h5>
                       <ul class="list-unstyled">
-                        <li><a class="text-white text-decoration-none f16" href="">Home</a></li>
-                        <li><a class="text-white text-decoration-none f16" href="">Products</a></li>
+                        <li><a class="text-white text-decoration-none f16" href="#home">Home</a></li>
+                        <li><a class="text-white text-decoration-none f16" href="#product">Products</a></li>
                       </ul>
                     </div>
                     <div class="col-3">
@@ -270,6 +273,27 @@
       </div>
     </div>
     <!-- ====== FOOTER END ====== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function ()
+      {
+        var homeLink = document.getElementById("homeLink");
+        var productLink = document.getElementById("productLink");
+
+        $(window).scroll(function ()
+        {
+          var scroll = $(window).scrollTop()c      (scroll)
+              //>=, not <                = 640)
+              {
+            homeLink.classList.ad        e");
+            productLink.classList.add("active");
+            {
+              homeLink.mo          ");
+              productLink.classLis          ve");
+            }
+          });
+      });
+    </script>
 
   </body>
 
