@@ -83,40 +83,43 @@
                       <!-- BAWL END -->
                     </span>
                     <br class="d-none d-lg-block" />
-                    Ethereal <span class="color1">Scripts.</span>
+                    Ethereal <span id="heroText" class="color1"></span>
                   </h1>
                   <p data-aos="fade-right" data-aos-delay="500" class="f20 color3 mt-2 mb-4">Lorem ipsum dolor sit amet,
                     consectetur
                     adipiscing elit.
                     In mauris metus, venenatis et justo id.</p>
-                  <div class="d-flex flex-wrap">
-                    <button data-aos="fade-up" data-aos-delay="500" class="me-2 me-sm-4 border-0 text-white position-relative mt-2">Browse
-                      Products
-                      <!-- BAWL START -->
-                      <div data-aos="zoom-in" data-aos-delay="700" class="hero_bawl2 zindexBawl position-absolute bottom-0 end-0">
-                        <img src="./assets/images/herobawl2.svg" alt="">
-                      </div>
-                      <!-- BAWL END -->
-                    </button>
-                    <button data-aos="fade-right" data-aos-delay="600"
-                      class="border-0 bg-transparent text-white f16 d-flex align-items-center mt-2"><img
-                        src="./assets/images/mouse.svg" alt="" class="mouse_img me-2">
-                      Scroll down to
-                      learn
-                      more</button>
+                  <a href="#product">
+                    <div class="d-flex flex-wrap">
+                      <button data-aos="fade-up" data-aos-delay="500" class="me-2 me-sm-4 border-0 text-white position-relative mt-2">Browse
+                        Products
+                        <!-- BAWL START -->
+                        <div data-aos="zoom-in" data-aos-delay="700" class="hero_bawl2 zindexBawl position-absolute bottom-0 end-0">
+                          <img src="./assets/images/herobawl2.svg" alt="">
+                        </div>
+                        <!-- BAWL END -->
+                        </button>
+                  </a>
+
+                  <button data-aos="fade-right" data-aos-delay="600"
+                    class="border-0 bg-transparent text-white f16 d-flex align-items-center mt-2"><img src="./assets/images/mouse.svg"
+                      alt="" class="mouse_img me-2">
+                    Scroll down to
+                    learn
+                    more</button>
                   </div>
-                </div>
-                <div data-aos="fade-left" data-aos-delay="800" class="col-12 col-md-10 col-lg-6 mx-auto hero_img1">
-                  <img src="./assets/images/heroFull.svg" alt="">
-                </div>
-                <div data-aos="fade-left" data-aos-delay="800" class="col-12 col-lg-6 hero_img2">
-                  <img src="./assets/images/hero.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  </div>
+                  <div data-aos="fade-left" data-aos-delay="800" class="col-12 col-md-10 col-lg-6 mx-auto hero_img1">
+                    <img src="./assets/images/heroFull.svg" alt="">
+                  </div>
+                  <div data-aos="fade-left" data-aos-delay="800" class="col-12 col-lg-6 hero_img2">
+                    <img src="./assets/images/hero.svg" alt="">
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
     </div>
     <!-- ====== HERO END ====== -->
 
@@ -285,10 +288,24 @@
     <!-- ====== FOOTER END ====== -->
     <!-- SCRIPT TAGS START -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       $(document).ready(function ()
       {
+        new TypeIt("#heroText", {
+          waitUntilVisible: true,
+          speed: 250,
+          loop: true,
+        })
+          .type("Scripts.", { delay: 600 })
+          .delete(8)
+          .type("Notify.", { delay: 600 })
+          .delete(8)
+          .type("Links.", { delay: 600 })
+          .delete(6)
+          .go();
+
         // ANIMATION INITIALIZATION
         AOS.init({
           once: true,
